@@ -1,18 +1,16 @@
 package com.haydikodlayalim.accountservice.service;
 
-import com.haydikodlayalim.accountservice.dto.AccountDto;
 import com.haydikodlayalim.accountservice.entity.Account;
 import com.haydikodlayalim.accountservice.repo.AccountRepository;
+import com.haydikodlayalim.client.contract.AccountDto;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Slice;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 
-import java.util.List;
 import java.util.Optional;
 
 @Service

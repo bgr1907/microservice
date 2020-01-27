@@ -8,12 +8,12 @@
 
     <parent>
         <artifactId>service-parent</artifactId>
-        <groupId>comhaydikodlayalim</groupId>
+        <groupId>com.haydikodlayalim</groupId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath/>
     </parent>
 
-    <groupId>comhaydikodlayalim</groupId>
+    <groupId>com.haydikodlayalim</groupId>
     <version>10.0.1</version>
     <name>ticket-service</name>
     <description>Ticket Service</description>
@@ -21,10 +21,50 @@
     <dependencies>
 
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.17</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-stream</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-stream-binder-rabbit</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.4</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.haydikodlayalim</groupId>
+            <artifactId>service-common</artifactId>
+            <version>${project.version}</version>
         </dependency>
 
         <dependency>
@@ -50,6 +90,12 @@
             <artifactId>spring-cloud-starter-eureka</artifactId>
             <version>1.4.7.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>com.haydikodlayalim</groupId>
+            <artifactId>service-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
 
     </dependencies>
 
@@ -61,6 +107,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>

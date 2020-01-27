@@ -9,6 +9,7 @@
 		<module>config-server</module>
         <module>eureka-server</module>
         <module>ticket-service</module>
+        <module>service-common</module>
     </modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
@@ -16,12 +17,12 @@
 		<version>2.2.2.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>comhaydikodlayalim</groupId>
+	<groupId>com.haydikodlayalim</groupId>
 	<artifactId>microservice-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>11</java.version>
 		<spring.cloud.version>Hoxton.RELEASE</spring.cloud.version>
 	</properties>
 

@@ -1,18 +1,13 @@
 package com.haydikodlayalim.accountservice.api;
 
-import com.haydikodlayalim.accountservice.dto.AccountDto;
-import com.haydikodlayalim.accountservice.entity.Account;
 import com.haydikodlayalim.accountservice.service.AccountService;
+import com.haydikodlayalim.client.contract.AccountDto;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Slice;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 /**
  * localhost:8080/account
  * GET PUT DELETE POST
